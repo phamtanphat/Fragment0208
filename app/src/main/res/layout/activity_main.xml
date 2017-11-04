@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.ptp.phamtanphat.fragment0208.MainActivity">
+
+    <Button
+        android:onClick="AddFragment"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/buttonAddA"
+        android:text="Add Fragment A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:onClick="AddFragment"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/buttonAddA"
+        android:id="@+id/buttonAddB"
+        android:text="Add Fragment B"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <FrameLayout
+        android:id="@+id/framelayout"
+        android:layout_below="@+id/buttonAddB"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </FrameLayout>
+</RelativeLayout>
